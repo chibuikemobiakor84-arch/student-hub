@@ -1,0 +1,253 @@
+/* ================= GENERAL STYLES ================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9; /* lighter and cleaner */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: linear-gradient(135deg, #0a4da2, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    margin: 5px 0;
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.hero-img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    max-width: 400px;
+}
+
+.hero-text h2 {
+    margin-top: 0;
+}
+
+.hero button {
+    padding: 14px 30px;
+    border: none;
+    background-color: #ffca28;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+/* ================= WHY CHOOSE US ================= */
+.why {
+    padding: 40px;
+    text-align: center;
+}
+
+.why ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* ================= SERVICES ================= */
+.services {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.service-box {
+    background-color: #e3f2fd;
+    padding: 25px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    background-color: #bbdefb;
+    transform: translateY(-5px);
+}
+
+/* ================= JOIN SECTION ================= */
+.join {
+    background: linear-gradient(135deg, #43a047, #66bb6a);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.join button {
+    padding: 14px 30px;
+    border: none;
+    background-color: #ffca28;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.join button:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
+
+/* ================= REGISTER / LOGIN FORM ================= */
+.register {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    margin: 20px;
+}
+
+.register h2 {
+    margin-bottom: 20px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.register label {
+    align-self: flex-start;
+    margin: 10px 0 5px 0;
+}
+
+.register input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    transition: 0.3s;
+}
+
+.register input:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 5px rgba(30,136,229,0.5);
+}
+
+.register button {
+    background-color: #43a047;
+    padding: 14px 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.register button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background: linear-gradient(135deg, #0a4da2, #1976d2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 10px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .service-box {
+        width: 95%;
+    }
+
+    .why ul {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .hero-text h2 {
+        font-size: 22px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .register form {
+        width: 95%;
+    }
+}
